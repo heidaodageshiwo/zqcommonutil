@@ -6,7 +6,7 @@
 
   <groupId>com.github.heidaodageshiwo</groupId>
   <artifactId>zqcommonutil</artifactId>
-  <version>0.0.1-RELEASE</version>
+  <version>0.0.5-RELEASE</version>
   <packaging>jar</packaging>
   <name>zqcommonutil</name>
   <description>张强公共util</description>
@@ -96,12 +96,24 @@
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-web</artifactId>
      </dependency>-->
+    <!--    <dependency>
+          <groupId>com.alipay</groupId>
+          <artifactId>sdk-java</artifactId>
+          <version>20180122110032</version>
+        </dependency>-->
+    <!-- https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java -->
+    <dependency>
+      <groupId>com.alipay.sdk</groupId>
+      <artifactId>alipay-sdk-java</artifactId>
+      <version>4.9.5.ALL</version>
+    </dependency>
 
   </dependencies>
 
   <build>
 
     <plugins>
+
       <!-- Source -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -133,12 +145,11 @@
       </plugin>
 
 
-
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
-       <plugin>
+      <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.7</version>
@@ -151,8 +162,6 @@
       </plugin>
     </plugins>
   </build>
-
-
 
 
 </project>
