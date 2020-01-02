@@ -28,7 +28,7 @@ public class ZhangqiangDateUtil {
 	public static String getCurrentDateStr(){
 		System.out.println("===============张强测试start===============");
 		Date date=new Date();
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddhhmmssSSS");
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddHHmmssSSS");
 		System.out.println("===============张强测试end===============");
 		return sdf.format(date);
 	}

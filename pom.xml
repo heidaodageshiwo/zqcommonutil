@@ -6,7 +6,7 @@
 
   <groupId>com.github.heidaodageshiwo</groupId>
   <artifactId>zqcommonutil</artifactId>
-  <version>0.0.5-RELEASE</version>
+  <version>0.0.7-RELEASE</version>
   <packaging>jar</packaging>
   <name>zqcommonutil</name>
   <description>张强公共util</description>
@@ -107,6 +107,14 @@
       <artifactId>alipay-sdk-java</artifactId>
       <version>4.9.5.ALL</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.10</version>
+<!--      <scope>provided</scope>-->
+    </dependency>
+
 
   </dependencies>
 

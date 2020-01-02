@@ -27,7 +27,7 @@ public class DateUtil {
 
 	public static String getCurrentDateStr(){
 		Date date=new Date();
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddhhmmssSSS");
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddHHmmssSSS");
 		return sdf.format(date);
 	}
 	
