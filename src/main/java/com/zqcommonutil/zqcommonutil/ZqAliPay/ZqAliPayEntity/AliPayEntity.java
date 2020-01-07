@@ -3,7 +3,7 @@ package com.zqcommonutil.zqcommonutil.ZqAliPay.ZqAliPayEntity;
 import java.io.Serializable;
 import lombok.Data;
 
-//实体 @auther: zhangq
+//支付宝实体 @auther: zhangqiang
 @Data
 public class AliPayEntity implements Serializable {
 
@@ -14,6 +14,9 @@ public class AliPayEntity implements Serializable {
   private String subject;
   //商品描述
   private String body;
+
+  //OutTradeNo
+  private String outTradeNo;
 
 
   //商户appid
@@ -33,4 +36,12 @@ public class AliPayEntity implements Serializable {
   //RSA2
   private String signtype;
 
+  public AliPayEntity() {
+  }
+
+  public AliPayEntity(String charset, String alipay_public_key, String signtype) {
+    this.charset = charset;
+    this.alipay_public_key = alipay_public_key;
+    this.signtype = signtype;
+  }
 }
