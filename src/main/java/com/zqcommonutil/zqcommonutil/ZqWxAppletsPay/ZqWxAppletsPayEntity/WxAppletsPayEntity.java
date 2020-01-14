@@ -1,13 +1,13 @@
-package com.zqcommonutil.zqcommonutil.ZqWxPay.ZqWxPayEntity;
+package com.zqcommonutil.zqcommonutil.ZqWxAppletsPay.ZqWxAppletsPayEntity;
 
 import java.io.Serializable;
 import lombok.Data;
 
-//微信App支付实体 @auther: zhangqiang
+//微信小程序支付实体 @auther: zhangqiang
 @Data
-public class WxPayEntity implements Serializable {
+public class WxAppletsPayEntity implements Serializable {
 
-  private static final long serialVersionUID = -3623487064102750085L;
+  private static final long serialVersionUID = -3056513563961979461L;
   //支付总金额
   private Integer totalAmount;
   //ip
@@ -16,6 +16,8 @@ public class WxPayEntity implements Serializable {
   private String body;
   //OutTradeNo
   private String outTradeNo;
+  //小程序支付需要openid
+  private String openid;
 
   //微信公众号或者小程序等的appid
   private String appId;
@@ -29,7 +31,7 @@ public class WxPayEntity implements Serializable {
   private String tradetype;
 
 
-  public WxPayEntity() {
+  public WxAppletsPayEntity() {
   }
 
 

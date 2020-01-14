@@ -6,7 +6,7 @@
 
   <groupId>com.github.heidaodageshiwo</groupId>
   <artifactId>zqcommonutil</artifactId>
-  <version>0.1.3-RELEASE</version>
+  <version>0.1.4-RELEASE</version>
   <packaging>jar</packaging>
   <name>zqcommonutil</name>
   <description>张强公共util</description>
